@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+    <!-- <link rel="stylesheet" href="jquery.css"> -->
+    <title>Disappearing Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('img').click(function () {
+                $(this).fadeOut();
+            });
+
+            $('button').click(function () {
+                $('img').fadeIn();
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>jQuery Assignment</h1>
+            <h2>Disappearing Ninja game</h2>
+        </div>
+        <hr>
+        <div id="main-content">
+            <h3>When an image is clicked, have the clicked image disappear.</h3>
+
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <img src="img/catandninja.png" alt="catandninja_pic">
+            <button>Restore</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
